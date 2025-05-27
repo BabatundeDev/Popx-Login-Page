@@ -38,7 +38,7 @@ function Home() {
         </div>
 
         <div className="d-flex flex-column gap-3">
-          <a
+          <link
             href="/Popx-Login-Page/signup"
             className="btn"
             style={{
@@ -50,8 +50,8 @@ function Home() {
             }}
           >
             Create Account
-          </a>
-          <a
+          </link>
+          <link
             href="/Popx-Login-Page/signin"
             className="btn"
             style={{
@@ -63,7 +63,7 @@ function Home() {
             }}
           >
             Already Registered? Login
-          </a>
+          </link>
         </div>
       </div>
     </div>
