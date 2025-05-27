@@ -1,19 +1,18 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Signup from './pages/Signup'
-import Signin from './pages/Signin'
-import Profile from './pages/Profile'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Signin from "./Signin";
+import Signup from "./Signup";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/signin" element={<Signin />} />
-      <Route path="/profile" element={<Profile />} />
-    </Routes>
-  )
+    <BrowserRouter basename="/Popx-Login-Page">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
