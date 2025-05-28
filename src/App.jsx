@@ -1,19 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Signin from "./pages/Signin.jsx";
-import Signup from "./pages/Signup.jsx";
-import Profile from "./pages/Profile.jsx";
+// src/App.jsx
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <BrowserRouter basename="/Popx-Login-Page">
+    <HashRouter basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

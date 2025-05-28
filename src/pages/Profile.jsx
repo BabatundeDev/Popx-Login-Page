@@ -1,3 +1,6 @@
+import womanPic from '../assets/images/woman.jpg';
+import cameraIcon from '../assets/icons/camera.svg';
+
 function Profile() {
   return (
     <div
@@ -51,7 +54,7 @@ function Profile() {
           >
             <div style={{ position: "relative", width: "90px", height: "90px" }}>
               <img
-                src="src/assets/images/woman.jpg"
+                src={womanPic}
                 alt="profile"
                 style={{
                   width: "100%",
@@ -77,8 +80,8 @@ function Profile() {
                 }}
               >
                 <img
-                  src="src/assets/icons/camera.svg"
-                  alt=""
+                  src={cameraIcon}
+                  alt="camera icon"
                   style={{ width: "15px" }}
                 />
               </button>

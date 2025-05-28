@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Signin() {
   return (
     <div
@@ -116,8 +118,8 @@ function Signin() {
             />
           </div>
 
-          <a
-            href="/profile"
+          <Link
+            to="/profile"
             type="submit"
             className="btn w-100"
             style={{
@@ -130,7 +132,7 @@ function Signin() {
             }}
           >
             Login
-          </a>
+          </Link>
         </form>
       </div>
     </div>

@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"; // ✅ Required import
+
 function Home() {
   return (
     <div
       style={{
-        height: "100vh", // full screen height
+        height: "100vh",
         width: "100%",
         backgroundColor: "#fff",
         display: "flex",
@@ -38,8 +40,8 @@ function Home() {
         </div>
 
         <div className="d-flex flex-column gap-3">
-          <link
-            href="/signup"
+          <Link
+            to="/signup"
             className="btn"
             style={{
               background: "#6c25ff",
@@ -50,9 +52,9 @@ function Home() {
             }}
           >
             Create Account
-          </link>
-          <link
-            href="/signin"
+          </Link>
+          <Link
+            to="/signin"
             className="btn"
             style={{
               background: "#CEBAFB",
@@ -63,7 +65,7 @@ function Home() {
             }}
           >
             Already Registered? Login
-          </link>
+          </Link>
         </div>
       </div>
     </div>
